@@ -7,7 +7,7 @@ export default class ErrorPage extends React.Component {
 
     render() {
         return (
-            <div>About</div>
+            <div>Error Page</div>
         );
     }
 }

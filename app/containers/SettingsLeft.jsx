@@ -5,17 +5,13 @@ class Left extends React.Component {
 
   constructor(props){
 	super(props);
-	this.state={
-		currentIndex:0,
-	}
+
    }
 
     onClickLiHandler(e){
    		if(e.target.nodeName.toLocaleLowerCase()=="li")
    			{
-   				this.setState({
-   					currentIndex:e.target.id.slice(-1)
-   				})
+
    			}
    }
 
@@ -26,7 +22,6 @@ class Left extends React.Component {
               name={menuli.name} 
               to={menuli.to} 
               index={i} 
-              currentIndex={this.state.currentIndex}
               type="setting"
               />)
 	})

@@ -16,10 +16,10 @@ import SysInf from './containers/SysInf.jsx'
 ReactDOM.render((
     <Router history={hashHistory}>
         <Route path="/" component={Top}>
-        	<IndexRoute component={Home}/>
+        	<IndexRoute path="/Home" component={Home}/>
         	<Route path="/Home" component={Home}/>
         	<Route path="/HomeSetting" component={SettingsLeft}>
-        		<IndexRoute component={SysInf}/>
+        		<IndexRoute  path="/HomeSetting/SysInf" component={SysInf}/>
         		<Route path="/HomeSetting/SysInf" component={SysInf}/>
         		<Route path="/HomeSetting/Main" component={Main}/>
         	</Route>

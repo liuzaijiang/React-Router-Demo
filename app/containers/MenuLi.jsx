@@ -7,11 +7,9 @@ class MenuLi extends React.Component {
 	}
 
     render() {
-    	let Li="";
-    	Li=this.props.currentIndex==this.props.index?"activeLi":"";
 
     return (
-    <Link to={this.props.to} className={Li} >
+    <Link to={this.props.to} activeClassName="activeLi" >
     	 <li  id={`${this.props.type}Li${this.props.index}`}>
      		{this.props.name}
      	</li>
